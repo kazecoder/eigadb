@@ -1,0 +1,23 @@
+.search-input{
+  width:300px;
+  height:45px;
+
+}
+
+.search-bar{
+  position:relative;
+  border: solid white 2.5px;
+}
+
+.search-button{
+  position:absolute;
+  right : 0;
+  height :100%;
+}
+
+.cancel-button{
+  position:absolute;
+  right:0;
+  height:100%;
+  width:40px
+}
