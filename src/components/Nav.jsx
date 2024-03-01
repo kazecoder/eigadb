@@ -1,7 +1,16 @@
 import "./Nav.css";
 import Search from "./Search";
+import { Link } from "react-router-dom";
+import { useSearchContext } from "./SearchContext";
 
 const Nav = () => {
+
+  const {setFlag} = useSearchContext();
+
+  const handleHomeClick=()=>{
+    setFlag(false);
+  }
+
   return (
     <div className="navbar">
       <img
@@ -11,7 +20,7 @@ const Nav = () => {
       />
 
       <ul className="nav-links">
-        <li>Home</li>
+       <Link to='/' onClick={handleHomeClick}><li>Home</li></Link>
         <li>TV Shows</li>
         <li>Movies</li>
         <li>My Lists</li>
@@ -19,7 +28,7 @@ const Nav = () => {
       </ul>
 
       <div>
-        <Search/>
+         <Search/>
       </div>
     </div>
   );

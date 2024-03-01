@@ -4,6 +4,7 @@ import { API_KEY } from "../api/requests";
 import axios from "../api/axios";
 import { useSearchContext } from "./SearchContext";
 
+
 const baseURL = "https://api.themoviedb.org/3/search/movie?";
 
 
@@ -19,11 +20,11 @@ const Search = () => {
   .get(`${baseURL}query=${query}&api_key=${API_KEY}`)
   .then((response) => {
   setResults(response.data.results);
+
 });
       setFlag(!flag);
 
   };
-
 
   const cancelSearch = () =>{
     setFlag(!flag);
@@ -34,7 +35,9 @@ const Search = () => {
   }
 
   return (
+
     <div className="search-bar">
+
       <input
         className="search-input"
         value={query}
