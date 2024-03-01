@@ -1,19 +1,19 @@
-.movie-poster-search-image{
+.movie-poster-search-image {
   object-fit: contain;
-  height:350px;
-  padding:10px;
+  height: 350px;
+  padding: 10px;
   transition-duration: 450ms;
 }
 
-.movie-poster-search-image:hover{
+.movie-poster-search-image:hover {
   transform: scale(1.1);
 }
 
-.movie-search-list{
-  display:flex;
-  width:100%;
+.movie-search-list {
+  display: flex;
+  width: 100%;
   flex-wrap: wrap;
   overflow-y: hidden;
   overflow-x: scroll;
-  padding:25px;
+  padding: 25px;
 }

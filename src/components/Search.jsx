@@ -13,14 +13,12 @@ const Search = () => {
 
   const {query,flag,results,setQuery,setFlag,setResults} = useSearchContext();
 
-  console.log(flag);
   const handleSubmit = () => {
 
     axios
   .get(`${baseURL}query=${query}&api_key=${API_KEY}`)
   .then((response) => {
   setResults(response.data.results);
-  console.log(response.data.results);
 });
       setFlag(!flag);
 

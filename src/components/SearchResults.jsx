@@ -1,9 +1,7 @@
 import { useSearchContext } from "./SearchContext";
-import './SearchResults.css'
+import "./SearchResults.css";
 
 const baseURL = "https://image.tmdb.org/t/p/original";
-
-
 
 const SearchResults = () => {
   const { results } = useSearchContext();
