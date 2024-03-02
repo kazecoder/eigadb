@@ -5,7 +5,7 @@ import axios from "../api/axios";
 import { useSearchContext } from "./SearchContext";
 
 
-const baseURL = "https://api.themoviedb.org/3/search/movie?";
+const baseURL = "https://api.themoviedb.org/3/search/multi?";
 
 
 
@@ -18,7 +18,7 @@ const Search = () => {
 
     axios
   .get(`${baseURL}query=${query}&api_key=${API_KEY}`)
-  .then((response) => {
+  .then((response) => {console.log(response.data)
   setResults(response.data.results);
 
 });

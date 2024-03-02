@@ -1,22 +1,15 @@
+import Nav from "./Nav";
+import { useSearchContext } from "./SearchContext";
+import SearchResults from "./SearchResults";
 
-import Nav from './Nav'
-import { useSearchContext } from './SearchContext';
-import SearchResults from './SearchResults';
-
-const NavWrapper = ({children}) => {
+const NavWrapper = ({ children }) => {
   const { flag } = useSearchContext();
   return (
     <>
-   <Nav/>
-   {!flag ?(<>
-
-    {children}
+      <Nav />
+      {!flag ? <>{children}</> : <SearchResults />}
     </>
-   )
-   :( <SearchResults/>)
-  }
-  </>
-  )
-}
+  );
+};
 
-export default NavWrapper
+export default NavWrapper;

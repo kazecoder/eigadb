@@ -1,6 +1,7 @@
 .movie-poster-search-image {
   object-fit: contain;
   height: 350px;
+ 
   padding: 10px;
   transition-duration: 450ms;
 }
@@ -13,7 +14,5 @@
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  overflow-y: hidden;
-  overflow-x: scroll;
-  padding: 25px;
+
 }

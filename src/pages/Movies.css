@@ -1,0 +1,40 @@
+.movie-page{
+  object-fit: contain;
+  height: 350px;
+  padding: 5px;
+  transition-duration: 450ms;
+  border-radius: 10px;
+  border:15px;
+  margin-right:15px;
+  margin :20px
+
+}
+
+.movie-page:hover {
+  transform: scale(1.1);
+  background-color: white;
+
+}
+
+.movies-page{
+  display: flex;
+  width: 100%;
+  height:100%;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+.movie-layout{
+  display: flex;
+  flex-direction: column;
+}
+
+.genres{
+  display: flex;
+  list-style: none;
+ gap:2rem;
+  
+}
+
+.genre{
+}

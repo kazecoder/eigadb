@@ -1,4 +1,4 @@
-.movie-poster-image {
+.movie{
   object-fit: contain;
   height: 250px;
   padding: 5px;
@@ -9,21 +9,16 @@
 
 }
 
-.movie-poster-image:hover {
+.movie:hover {
   transform: scale(1.1);
   background-color: white;
 
 }
 
-.movie-list {
+.movies{
   display: flex;
   width: 100%;
-  overflow-y: hidden;
-  overflow-x: scroll;
+  height:100%;
+  flex-wrap: wrap;
   padding: 25px;
 }
-
-.movie-list::-webkit-scrollbar {
-  display: none;
-}
-

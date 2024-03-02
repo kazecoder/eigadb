@@ -3,7 +3,7 @@ import { requests } from "../api/requests";
 
 
 const displays = [
-  { title: "NETFLIX ORIGINALS", fetchUrl: requests.fetchNetflixOriginals },
+  { title: "Suggestions", fetchUrl: requests.fetchNetflixOriginals },
   { title: "Trending", fetchUrl: requests.fetchTrending },
   { title: "Top Rated", fetchUrl: requests.fetchTopRated },
   { title: "Action Movies", fetchUrl: requests.fetchActionMovies },

@@ -1,6 +1,7 @@
 import "./Nav.css";
 import Search from "./Search";
 import { Link } from "react-router-dom";
+import Logo from "../assets/logo.png"
 import { useSearchContext } from "./SearchContext";
 
 const Nav = () => {
@@ -13,18 +14,19 @@ const Nav = () => {
 
   return (
     <div className="navbar">
+      <Link to='/' onClick={handleHomeClick}>
       <img
         className="logo"
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Logonetflix.png/1920px-Logonetflix.png"
+        src={Logo}
         alt="Logo"
       />
+      </Link>
 
       <ul className="nav-links">
        <Link to='/' onClick={handleHomeClick}><li>Home</li></Link>
-        <li>TV Shows</li>
-        <li>Movies</li>
-        <li>My Lists</li>
-        <li>Popular</li>
+       <Link to='/tv' onClick={handleHomeClick}><li>TV Shows</li></Link>
+       <Link to='/movie' onClick={handleHomeClick}> <li>Movies</li></Link>
+       <Link to='/person' onClick={handleHomeClick}> <li>Actors</li></Link>
       </ul>
 
       <div>

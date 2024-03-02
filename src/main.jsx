@@ -1,12 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
+import Movies from "./pages/Movies.jsx";
 import Movie from "./pages/Movie.jsx";
+import Actors from "./pages/Actors.jsx";
+import Series from "./pages/Series.jsx";
 import Tv from "./pages/Tv.jsx"
 import "./index.css";
 import { SearchProvider } from "./components/SearchContext";
 import { createBrowserRouter, RouterProvider,Outlet } from "react-router-dom";
 import NavWrapper from "./components/NavWrapper.jsx";
+import Actor from "./pages/Actor.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +23,10 @@ const router = createBrowserRouter([
         path:"/",
         element: <App/>
       },
+      {
+        path:"/movie",
+        element:<Movies/>
+      },
 
       {
         path: "/movie/:movieId",
@@ -27,6 +35,18 @@ const router = createBrowserRouter([
       {
         path: "/tv/:tvId",
         element: <Tv />
+      },
+      {
+        path:"/tv",
+        element:<Series/>
+      },
+      {
+        path: "/person/:actorId",
+        element: <Actor/>
+      },
+      {
+        path: "/person",
+        element:<Actors/>
       }
     ]
   },
