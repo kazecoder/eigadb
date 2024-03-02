@@ -12,3 +12,4 @@ EigaDB is a web application built using React and Vite that allows users to brow
 - Dynamic Data: Data is fetched dynamically from the TMDb API ensuring that users have access to the latest information.
 Please note that the current version of EigaDB is not optimized for mobile devices and may not provide the best user experience on smaller screens. Future updates will focus on improving responsiveness.
 
+Deployed in Netlify: https://eigadb.netlify.app/
